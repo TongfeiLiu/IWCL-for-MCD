@@ -1,6 +1,6 @@
 # IWCL: Interactive Wavelet Commonality Learning for Unsupervised End-to-End Heterogeneous Change Detection
 
-![Paper](https://img.shields.io/badge/Paper-TGRS%20P&RS-blue)
+![Paper](https://img.shields.io/badge/Paper-TGRS-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-red)
 
@@ -23,14 +23,14 @@ Jianjian Xu, Tao Lei, Tongfei Liu*, Yingbo Wang, Xiaogang Du, Zhiyong Lv, and Ma
 
 Heterogeneous remote sensing change detection (CD) is a research hotspot in the field of remote sensing. However, due to the differences between different modalities, heterogeneous remote sensing images (HRSIs) are often difficult to compare and analyze directly. To address this challenge, this study hypothesizes that unchanged regions between HRSI exhibit significantly more commonality features in the wavelet domain than changed regions. Based on this, this article proposes an interactive wavelet commonality learning (IWCL) method for unsupervised end-to-end heterogeneous CD, which captures the wavelet commonality features between HRSI and identifies changes through their similarity measurement. The proposed IWCL consists of a Siamese wavelet encoder and two independent inverse wavelet decoders. Specifically, the wavelet encoder first decomposes the HRSI into multidirectional wavelet subbands, making the commonality features of the unchanged areas more prominent in multiple directions. Subsequently, we designed a cross-modal interactive learning (CMIL) module in the wavelet encoder to excavate deeper into these multidirectional wavelet commonality features. In addition, the wavelet commonality features extracted by the encoder are used to reconstruct the original image through two inverse wavelet decoders, which achieves unsupervised learning. Moreover, a multiscale commonality loss function is introduced to effectively guide the network to furth er improve the representation ability of wavelet commonality features at different scales. Finally, the difference image (DI) is acquired by measuring the similarity of wavelet commonality features between HRSI, and the binary change image is obtained by Otsu. Experiments on four heterogeneous CD datasets verify the effectiveness and superiority of the proposed IWCL in resolving heterogeneous CD. The code will be available at https://github.com/TongfeiLiu/IWCL-for-MCD.
 
-The framework of the proposed CGSL is presented as follows:
-![Framework of our proposed CGSL](https://github.com/TongfeiLiu/CGSL-for-MCD/blob/main/Figures/Freamwork%20of%20CGSL.png)
+The framework of the proposed IWCL is presented as follows:
+![Framework of our proposed IWCL](https://github.com/TongfeiLiu/IWCL-for-MCD/blob/main/Figs/Freamwork.png)
 
 ---
 
 ## 📊 Results Preview
 **Change Maps**
-![Change maps of the proposed IWCL](https://github.com/TongfeiLiu/CGSL-for-MCD/blob/main/Figures/BCIs.png)
+![Change maps of the proposed IWCL](https://github.com/TongfeiLiu/IWCL-for-MCD/blob/main/Figs/Results.png)
 
 ## 📦 Installation
 
